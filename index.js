@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   res.send(`<html><head><title>Terminal</title></head>
 <body style="background:#000;color:#0f0;font-family:monospace;padding:10px">
 <form action="/" method="GET">
-<input name="cmd" value="${cmd||''}" style="background:#000;color:#0f0;border:1px solid #0f0;padding:8px;width:85%;font-family:monospace;font-size:14px" autofocus autocomplete="off" autocorrect="off" autocapitalize="off"/>
+<input name="cmd" value="" style="background:#000;color:#0f0;border:1px solid #0f0;padding:8px;width:85%;font-family:monospace;font-size:14px" autofocus autocomplete="off" autocorrect="off" autocapitalize="off"/>
 <input type="submit" value="Run" style="background:#0f0;color:#000;padding:8px;border:none;font-weight:bold"/>
 </form>
 <pre style="margin-top:10px">${cmd ? '$ '+cmd+'\n'+output : 'Ready...'}</pre>
